@@ -1,4 +1,4 @@
-module noname
+module jukemajster
 
 go 1.21.5
 
