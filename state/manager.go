@@ -76,6 +76,7 @@ func (m *Manager) Update() {
 			continue
 		}
 
+		// TODO clean this monstrosity
 		bulletIntersectsPlayerXLowerBound := (float32(bullet.X) > (float32(m.PlayerCircle.X) - (bullet.ModelRadius + m.PlayerCircle.Radius)))
 		bulletIntersectsPlayerXUpperBound := (float32(bullet.X) < (float32(m.PlayerCircle.X) + (bullet.ModelRadius + m.PlayerCircle.Radius)))
 		bulletIntersectsPlayerYLowerBound := (float32(bullet.Y) > (float32(m.PlayerCircle.Y) - (bullet.ModelRadius + m.PlayerCircle.Radius)))
